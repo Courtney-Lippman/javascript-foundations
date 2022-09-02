@@ -3,7 +3,9 @@ class Hobbit {
   this.name = name.name
   this.age = age
   }
-
+celebrateBirthday() {
+  this.age += 1;
+}
 }
 
 
