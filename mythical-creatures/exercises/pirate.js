@@ -4,6 +4,10 @@ class Pirate {
     this.job = job
     this.cursed = cursed
   }
+
+  robShip () {
+    return 'YAARRR!'
+  }
 }
 
 module.exports = Pirate
