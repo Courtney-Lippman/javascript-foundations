@@ -1,6 +1,7 @@
 class Magician {
-  constructor (name) {
+  constructor (name, assistant) {
     this.name = `The Great ${name.name}`
+    this.assistant = name.assistant
   }
 }
 
