@@ -4,11 +4,27 @@ class Pirate {
     this.job = job
     this.cursed = cursed
     this.booty = booty
+    this.callCount = 0
   }
 
   robShip () {
-    this.booty += 100
-    return 'YAARRR!'
+    this.callCount += 1
+    if (this.callCount > 5) {
+      this.cursed = true
+      return "ARG! I've been cursed!"
+    } else {
+      this.booty += 100
+      return 'YAARRR!'
+    }
+  }
+  liftCurse () {
+    if (this.cursed) {
+      this.booty -= 300
+      this.cursed = false
+      return 'Your curse has been lifted!'
+    } else {
+      return "You don't need to lift a curse!"
+    }
   }
 }
 
