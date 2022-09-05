@@ -7,6 +7,7 @@ class Magician {
     } else {
       this.favoriteAccessory = magicianInfo.clothing
     }
+    this.confidencePercentage = 10
   }
 
   performIncantation (incantation) {
