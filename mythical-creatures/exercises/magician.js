@@ -12,6 +12,12 @@ class Magician {
   performIncantation (incantation) {
     return `${incantation.toUpperCase()}!`
   }
+
+  performTrick (spells) {
+    if (this.favoriteAccessory === 'top hat') {
+      return 'PULL RABBIT FROM TOP HAT'
+    }
+  }
 }
 
 module.exports = Magician
