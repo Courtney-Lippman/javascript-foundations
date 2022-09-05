@@ -16,6 +16,8 @@ class Magician {
   performTrick (spells) {
     if (this.favoriteAccessory.includes('top hat')) {
       return 'PULL RABBIT FROM TOP HAT'
+    } else {
+      return 'PULL DOVE FROM SLEEVE'
     }
   }
 }
