@@ -39,7 +39,6 @@ describe('Pirate', function () {
 
   it('should be able to rob ships', function () {
     var pirate = new Pirate('Grace OMalley')
-
     assert.equal(pirate.robShip(), 'YAARRR!')
   })
 
@@ -49,19 +48,17 @@ describe('Pirate', function () {
     assert.equal(pirate.booty, 0)
   })
 
-  it.skip('should get 100 gold pieces when robbing a ship', function () {
+  it('should get 100 gold pieces when robbing a ship', function () {
     var pirate = new Pirate('Hannah')
 
     pirate.robShip()
-
     assert.equal(pirate.booty, 100)
 
     pirate.robShip()
-
     assert.equal(pirate.booty, 200)
   })
 
-  it.skip(
+  it(
     'should get cursed after robbing 5 ships instead of getting money',
     function () {
       var pirate = new Pirate('Robbie')
@@ -82,7 +79,7 @@ describe('Pirate', function () {
     }
   )
 
-  it.skip('should be able to lift curse for 300 booty', function () {
+  it('should be able to lift curse for 300 booty', function () {
     var pirate = new Pirate('Scott')
 
     function timeTravel () {
@@ -98,7 +95,7 @@ describe('Pirate', function () {
     assert.equal(pirate.cursed, false)
   })
 
-  it.skip('should only be able to lift curse if cursed', function () {
+  it('should only be able to lift curse if cursed', function () {
     var pirate = new Pirate('Kayla', 'captain')
 
     pirate.robShip()
