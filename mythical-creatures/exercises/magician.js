@@ -8,6 +8,10 @@ class Magician {
       this.favoriteAccessory = magicianInfo.clothing
     }
   }
+
+  performIncantation (incantation) {
+    return `${incantation.toUpperCase()}!`
+  }
 }
 
 module.exports = Magician
