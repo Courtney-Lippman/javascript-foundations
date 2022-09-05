@@ -15,6 +15,7 @@ class Magician {
   }
 
   performTrick (spells) {
+    this.confidencePercentage += 10
     if (this.favoriteAccessory.includes('top hat')) {
       return 'PULL RABBIT FROM TOP HAT'
     } else {
