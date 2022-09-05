@@ -2,7 +2,11 @@ class Magician {
   constructor (magicianInfo) {
     this.name = `The Great ${magicianInfo.name}`
     this.assistant = magicianInfo.assistant
-    this.favoriteAccessory = 'top hat'
+    if (magicianInfo.clothing === undefined) {
+      this.favoriteAccessory = 'top hat'
+    } else {
+      this.favoriteAccessory = magicianInfo.clothing
+    }
   }
 }
 
