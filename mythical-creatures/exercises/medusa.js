@@ -1,7 +1,6 @@
 var Person = require('./person')
 var Statue = require('./statue')
 
-class Medusa {
-}
+class Medusa {}
 
 module.exports = Medusa
