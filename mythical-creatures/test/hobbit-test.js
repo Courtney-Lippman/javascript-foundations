@@ -42,7 +42,6 @@ describe('Hobbit', function () {
     timeTravel(32, hobbit)
 
     assert.equal(hobbit.age, 32)
-    // Start with value of hobbit.age and end with number 32
     assert.equal(hobbit.adult, false)
   })
 
