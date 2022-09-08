@@ -1,7 +1,7 @@
 class Person {
-  constructor (name, mood = 'frightened') {
+  constructor (name, mood) {
     this.name = name
-    this.mood = mood
+    this.mood = mood || 'frightened'
   }
 }
 
