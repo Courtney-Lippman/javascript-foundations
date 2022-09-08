@@ -6,6 +6,9 @@ class Medusa {
     this.name = name
     this.statues = statues
   }
+  gazeAtVictim (victim) {
+    this.statues.push(new Statue(victim.name))
+  }
 }
 
 module.exports = Medusa
